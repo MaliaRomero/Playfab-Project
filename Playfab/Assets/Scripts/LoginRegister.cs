@@ -5,7 +5,7 @@ using PlayFab;
 using PlayFab.ClientModels;
 using TMPro;
 using UnityEngine.Events;
-
+//Dev
 public class LoginRegister : MonoBehaviour
 {
     [HideInInspector]
@@ -38,7 +38,7 @@ public class LoginRegister : MonoBehaviour
                 if (onLoggedIn != null)
                     onLoggedIn.Invoke();
             },
-            error => SetDisplayText(error.ErrorMessage,Color.red)
+            error => SetDisplayText(error.ErrorMessage, Color.red)
         );
     }
 
